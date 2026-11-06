@@ -1,0 +1,1 @@
+const fs=require('node:fs'),vm=require('node:vm');const c={window:{}};vm.runInNewContext(fs.readFileSync(require('node:path').join(__dirname,'public/data.js'),'utf8'),c);module.exports=c.window.GUILD_DATA;
